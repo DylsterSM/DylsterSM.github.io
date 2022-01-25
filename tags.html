@@ -93,8 +93,61 @@
            
 
             <!-- Willy Tags go here -->
-
             
+            <h1>I'm Willy ready to put some tags here</h1>
+            <address>Written by <a href="mailto:willyclay@u.boisestate.edu">Willy Clay</a>
+            Contact me there<br>
+            No really<br>
+            It's very easy<br>
+            This is an address tag
+           </address> <!--1-->
+           <p>
+               <h2>Let's Talk music....</h2>
+            <object width = "480" height ="480" 
+            data = "https://www.youtube.com/embed/Ji0RQF5a30A">
+            </object><!--2-->
+            <cite>Hope; Lost by My Old Band. 2016</cite> <!--3-->
+            <iframe width = "480" height = "480" 
+            src="https://www.youtube.com/embed/bfgChX_61hc">
+            </iframe><!--4-->
+            <cite>When We Loved by My Old Band. Using a different tag. 2016</cite>
+            Does anyone else <em>love</em> music?
+            Maybe the better question is if anyone <em>hates</em> music?
+            I didn't <em>like</em> music as a kid.
+            sounds <em>weird</em> to say that. <!--5-->
+            <label>How much i play guitar during the semester</label>
+            <progress value ="10" max = "100" > 10% </progress>
+            <label>How much i wish i played guitar during the semester</label>
+            <progress value = "99" max = "100"> 99% </progress> <!--6-->
+            Normal Text vs
+            <strong>This text is very stronk. Very Heavy Metal</strong><!--7-->
+
+            <form action = "/action_page.php" method = "get">
+            <label for = "genre">Choose your favorite genre of music from the list</label>
+            <input list = "genres" name = "genre" id = "genre">
+            <datalist id ="genres">
+                <option value = "Metal"></option>
+                <option value = "Heavy Metal"></option>
+                <option value = "Heavier Metal"></option>
+                <option value = "Heavier Metal Than That"></option>
+                <option value = "No Really: Metal"></option>
+                <option value = "Big Band"></option>
+            </datalist>
+            <input type = "Submit"><!--8,9,10-->
+        </form>
+        
+            <h3>Elements of Music</h3>
+            <dl>
+                <dt>Metal</dt>
+                <dd> Heavy</dd>
+                <dt>Guitar</dt>
+                <dd> Downtuned</dd>
+                <dt> Vocals</dt>
+                <dd> Best Monster Sound Impersonation</dd>
+                <dt> Drums</dt>
+                <dd> Fast</dd> <!--11,datalist-->
+            </dl>
+           </p>           
         </body>
     </html>
 
