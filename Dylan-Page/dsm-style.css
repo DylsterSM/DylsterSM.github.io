@@ -1,0 +1,149 @@
+table, th, td {
+    border:1px solid black;
+}
+* {
+    box-sizing: border-box;
+}
+        [class*="col-"] {
+        width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+float: left;
+padding: 15px;
+border: 2px solid rgb(255, 255, 255);
+}
+
+.row::after {
+content: "";
+clear: both;
+display: table;
+} 
+
+.regular-img {
+max-width: 100%;
+height: auto;
+}
+
+.same-size-img {
+    float: left;
+    width:  500px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.overflow {
+overflow-x:auto;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Dylan CSS Elements */
+    .dylan-img
+    {
+        float: left;
+        width:  400px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .dsm-base-font {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 300%;
+        font-weight: bold;
+        color: rgb(37, 80, 57);
+    }
+    .dsm-hover {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 300%;
+        font-weight: bold;
+        color: rgb(37, 80, 57);
+    }
+    .dsm-hover:hover {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 300%;
+        font-weight: bold;
+        color: rgb(90, 187, 135);
+    }
+    .dylan-strengths-img {
+        float: left;
+        width:  390px;
+        height: 390px;
+        object-fit: cover;
+    }
+   
+    .dylan-small-icon-img {
+        float: left;
+        width:  300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .dsm-center {
+        margin: auto;
+        width: 50%;
+      }
+    .dsm-smaller-base-font {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        color: rgb(37, 80, 57);
+    }
+
+    /* Hover over image, show text, CSS below */
+
+        /* Parent Container */
+        .content_img{
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Child Text Container */
+    .content_img div{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: black;
+        color: white;
+        margin-bottom: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+    
+    /* Hover on Parent Container */
+    .content_img:hover{
+        cursor: pointer;
+    }
+    
+    .content_img:hover div{
+        width: 150px;
+        padding: 8px 15px;
+        visibility: visible;
+        opacity: 0.7; 
+    }
+
