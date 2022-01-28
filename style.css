@@ -30,6 +30,11 @@ padding: 15px;
 border: 2px solid rgb(255, 255, 255);
 }
 
+.title {
+    font-size: 400%;
+    color:rgb(255, 255, 255)
+}
+
 .row::after {
 content: "";
 clear: both;
