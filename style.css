@@ -33,9 +33,16 @@ content: "";
 clear: both;
 display: table;
 } 
-img {
+.regular-img {
 max-width: 100%;
 height: auto;
+}
+.same-size-img {
+    float: left;
+    width:  500px;
+    height: 500px;
+    object-fit: cover;
+
 }
 .overflow {
 overflow-x:auto;
