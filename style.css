@@ -155,3 +155,113 @@ overflow-x:auto;
         opacity: 0.7; 
     }
 
+    /*willy css*/
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Playfair Display', serif;
+ }
+    .wc-nav
+    {
+        width: 100%;
+        height: 75px;
+        background-color: #77240b;
+        line-height: 75px;
+        padding: 0px 100px;
+        position: fixed;
+        z-index: 1;        
+    }
+    .wc-nav-logo
+    {
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: 1.0px;;
+
+    }
+    nav .wc-nav-logo p
+    {
+        float:left;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    .wc-nav-ul
+    {
+        float: right;
+    }
+    nav .wc-nav-ul li
+    {
+        display: inline-block;
+        list-style: none;
+        
+    }
+       
+    nav .wc-nav-ul li a
+    {
+        color: #fff;
+        text-decoration: none;
+        font-size:  18px;
+        text-transform: uppercase;
+        padding: 0px 32px;
+    }
+    nav .wc-nav-ul li a:hover
+    {
+        color:#dd8844;
+    }
+
+    nav ul li .active
+    {
+        color: #ffab66;
+    }
+
+    .wc-bio-img 
+    {
+        padding-top: 100px;
+        max-width: 75%;
+        height: auto;
+        padding-left: 15px;
+       padding-right: 15px;
+       padding-top: 100px;
+       flex-grow: 0;
+       flex-shrink: 0;
+       flex-basis: 50%;
+   }
+   .wc-bio-column
+   {
+       max-width: 50%;
+       position: relative;
+       padding-left: 15px;
+       padding-right: 15px;
+       padding-top: 100px;
+       flex-grow: 0;
+       flex-shrink: 0;
+       flex-basis: 50%;
+       
+ }
+ .wc-row 
+ {
+     display:flex;
+     flex-wrap: nowrap;
+     margin-right: -15px;
+     margin-left: -15px;
+
+ }
+
+ .wc-bio-h1 
+ {
+     font-size: 1.75rem;
+     font-family: 'Playfair Display', serif;
+
+ }
+ .wc-bio-p1 
+ {
+     font-size: 1.25rem;
+     font-family: 'Playfair Display', serif;
+
+ }
+    
+
