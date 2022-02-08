@@ -27,7 +27,6 @@ table, th, td {
 [class*="col-"] {
 float: left;
 padding: 15px;
-border: 2px solid rgb(255, 255, 255);
 }
 
 .title {
@@ -51,8 +50,8 @@ height: auto;
 
 .same-size-img {
     float: left;
-    width:  500px;
-    height: 500px;
+    width:  350px;
+    height: 350px;
     object-fit: cover;
 
 }
