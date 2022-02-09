@@ -29,6 +29,12 @@ float: left;
 padding: 15px;
 }
 
+.heading {
+    background-color: rgb(71, 71, 71);
+    box-shadow: 10px 5px 5px black;
+    border-radius: 5%;
+}
+
 .title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 400%;
