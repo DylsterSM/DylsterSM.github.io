@@ -1,6 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: "Source Sans Pro", sans-serif;
+    --ff-secondary: "Source Code Pro", monospace; 
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #3bbb9a;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px){
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
 body {
     background: linear-gradient(270deg, #3bbb9a, #3b3ebb, #3ba9bb);
     background-size: 600% 600%;
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
 
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -20,4 +57,22 @@ body {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+
+    
 }
+
+img{
+    display: block;
+    max-width:100%;
+}
+
+/*Typography*/
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+h1 {font-size: var(--fs-h1)}
+h2 {font-size: var(--fs-h2)}
+h3 {font-size: var(--fs-h3)}
