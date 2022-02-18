@@ -27,9 +27,65 @@ table, th, td {
 [class*="col-"] {
 float: left;
 padding: 15px;
-border: 2px solid rgb(255, 255, 255);
 }
 
+.heading {
+    background-color: rgb(71, 71, 71); 
+    box-shadow: 10px 5px 5px black;
+    border-radius: 5%;
+}
+
+.home-page h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 400%;
+    font-weight: 800;
+    font-style: oblique;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+.home-page h2 {
+    font-size: 200%;
+    text-align: center;
+}
+
+.home-page img {
+    border-radius: 50%;
+}
+
+.style-styling {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    left: 1%;
+    bottom: 0%;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        left: 50%;
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: green;
+    }
+}
+
+.names {
+    color: white;
+}
 .row::after {
 content: "";
 clear: both;
@@ -43,8 +99,8 @@ height: auto;
 
 .same-size-img {
     float: left;
-    width:  500px;
-    height: 500px;
+    width:  350px;
+    height: 350px;
     object-fit: cover;
 
 }
@@ -61,6 +117,169 @@ overflow-x:auto;
     height: 100%;
 }
 
+/* nav bar */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+.wc-nav
+{
+    
+    width: 100%;
+    height: auto;
+    background-color: #77240b;
+    line-height: 60px;
+    padding: 0px 100px;
+           
+    display: flex;
+    z-index: 1;
+    
+}
+@media (max-width: 400px)
+{
+    .wc-nav 
+    {
+       flex-direction: column;
+       
+    }
+    
+}
+.wc-nav-logo
+{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.0px;
+    padding-right: 0 px;
+    
+
+}
+nav .wc-nav-logo p
+{
+    float:left;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.wc-nav-ul
+{
+    float: right;
+}
+nav .wc-nav-ul li
+{
+    display: inline-block;
+    list-style: none;
+    
+}
+   
+nav .wc-nav-ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size:  18px;
+    text-transform: uppercase;
+    padding: 50px 30px;
+    text-align: right;
+    
+}
+nav .wc-nav-ul li a:hover
+{
+    color:#dd8844;
+}
+
+nav ul li .active
+{
+    color: #ffab66;
+}
+.wc-css-selector {
+    background: linear-gradient(296deg, #b4713a, #f0af6a, #f7d59c, #ffffff);
+    background-size: 800% 800%;
+
+    -webkit-animation: Wc-Gradient-Anim 31s ease infinite;
+    animation: Wc-Gradient-Anim 31s ease infinite;
+}
+/* Page Navigation */
+.ds-nav
+{
+    
+    width: 100%;
+    height: auto;
+    background-color: #77240b;
+    line-height: 60px;
+    padding: 0px 100px;
+           
+    display: flex;
+    z-index: 1;
+    
+}
+@media (max-width: 400px)
+{
+    .ds-nav 
+    {
+       flex-direction: column;
+       
+    }
+    
+}
+.ds-nav-logo
+{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.0px;
+    padding-right: 0 px;
+    
+
+}
+nav .ds-nav-logo p
+{
+    float:center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.ds-nav-ul
+{
+    float: center;
+}
+nav .ds-nav-ul li
+{
+    display: inline-block;
+    list-style: none;
+    
+}
+   
+nav .ds-nav-ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size:  18px;
+    text-transform: uppercase;
+    padding: 50px 30px;
+    text-align: center;
+    
+}
+nav .ds-nav-ul li a:hover
+{
+    color:#dd8844;
+}
+
+nav ul li .active
+{
+    color: #ffab66;
+}
+
+.ds-css-selector {
+    background: linear-gradient(296deg, #b4713a, #f0af6a, #f7d59c, #ffffff);
+    background-size: 800% 800%;
+
+    -webkit-animation: Wc-Gradient-Anim 31s ease infinite;
+    animation: Wc-Gradient-Anim 31s ease infinite;
+}
 /* Dylan CSS Elements */
     .dylan-img
     {
