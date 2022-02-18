@@ -60,10 +60,10 @@ padding: 15px;
 .style-styling {
     text-align: center;
     position: relative;
-    margin: 50px auto;
+    margin: 25px auto;
     left: 1%;
-    bottom: 80%;
-    border-radius: 80%;
+    bottom: 0%;
+    border-radius: 50%;
     background-color: red;
     animation-name: move;
     animation-duration: 3s;
