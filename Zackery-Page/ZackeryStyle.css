@@ -467,8 +467,8 @@ html {
 }
 
 .animation {
-	width: 150px;
-	height: 150px;
+	width: 250px;
+	height: 250px;
 	box-sizing: border-box;
 	border: 5px white solid;
 	border-radius: 50%;
