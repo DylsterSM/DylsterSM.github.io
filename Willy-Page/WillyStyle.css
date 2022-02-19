@@ -1,0 +1,268 @@
+/*willy css*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+/* nav */
+.wc-nav
+{
+    width: 100%;
+    height: auto;
+    background-color: #77240b;
+    line-height: 60px;
+    padding: 0px 100px;
+           
+    display: flex;
+    z-index: 1;
+    
+}
+@media (max-width: 400px)
+{
+    .wc-nav 
+    {
+       flex-direction: column;
+       
+    }
+    
+}
+.wc-nav-logo
+{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.0px;
+    padding-right: 0 px;
+    
+
+}
+nav .wc-nav-logo p
+{
+    float:left;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.wc-nav-ul
+{
+    float: right;
+}
+nav .wc-nav-ul li
+{
+    display: inline-block;
+    list-style: none;
+    
+}
+   
+nav .wc-nav-ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size:  18px;
+    text-transform: uppercase;
+    padding: 50px 30px;
+    text-align: right;
+    
+}
+nav .wc-nav-ul li a:hover
+{
+    color:#dd8844;
+}
+
+nav ul li .active
+{
+    color: #ffab66;
+}
+
+/* bio */
+
+.wc-bio-img 
+{
+    padding-top: 100px;
+    max-width: 75%;
+    height: auto;  
+    width: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 100px;
+   flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: 50%;
+   box-shadow: #77240b;
+}
+.wc-bio-column
+{
+   max-width: 100%;
+   position: relative;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 100px;
+   flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: 50%;
+   
+}
+
+.bio-wc-row 
+{
+ display:flex;
+ flex-wrap: nowrap;
+ margin-right: -15px;
+ margin-left: -15px;
+}
+
+.wc-bio-h1 
+{
+ font-size: 2.25rem;
+ font-family: 'Playfair Display', serif;
+
+}
+.wc-bio-p1 
+{
+ font-size: 1.5rem;
+ font-family: 'Playfair Display', serif;
+
+}
+.wc-skills {
+    font-size: 2.25rem;
+ font-family: 'Playfair Display', serif;
+ text-align: center;
+ color: white;
+ margin: 1 em;
+
+ 
+
+}
+.wc-skills-section {
+    
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    text-align: left;
+    background-image: url("BryceCanyon-clay.jpg");
+    background-color:(0,0,0,.5);
+    height: 1000px;
+    font-size: 12px;
+    position: relative;
+    font-weight: 100;
+}
+
+
+
+.skills-margin {
+    margin-bottom: 4em;
+    column-count: 2;
+    column-width: 300px;
+    column-gap: 2em;
+}
+
+.skills-max-width {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
+
+/*background gradient */
+
+.wc-css-selector {
+background: linear-gradient(296deg, #b4713a, #f0af6a, #f7d59c, #ffffff);
+background-size: 800% 800%;
+
+-webkit-animation: Wc-Gradient-Anim 31s ease infinite;
+animation: Wc-Gradient-Anim 31s ease infinite;
+}
+
+@-webkit-keyframes Wc-Gradient-Anim {
+0%{background-position:0% 57%}
+50%{background-position:100% 44%}
+100%{background-position:0% 57%}
+}
+@keyframes Wc-Gradient-Anim {
+0%{background-position:0% 57%}
+50%{background-position:100% 44%}
+100%{background-position:0% 57%}
+}
+
+/* footer */
+
+.footer
+{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background-color: #77240b;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;     
+}
+.footer-text 
+{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+
+}
+.footer-text-list
+{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+
+}
+a, a:hover {
+	text-decoration: none;
+}
+/* https://codepen.io/vpdemo/pen/dPdymj */
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 8px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	width: 40px;
+    height: 28px;
+	color: #000;
+	background-color: rgb(212, 179, 88);
+	border: 1px solid #000;
+	padding-top: 6px;
+	border-radius: 24px;
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 22px;
+	-o-border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+	color: #FFF;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
