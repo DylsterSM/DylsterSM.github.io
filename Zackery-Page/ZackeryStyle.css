@@ -33,6 +33,85 @@
     }
 }
 
+/* Navigation */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+.navigation
+{
+    width: 100%;
+    height: auto;
+    background-color: #3bbb9a;
+    line-height: 60px;
+    padding: 0px 100px;
+           
+    display: flex;
+    z-index: 1;
+    
+   
+}
+@media (max-width: 400px)
+{
+    .navigation 
+    {
+       flex-direction: column;
+       
+    }
+    
+}
+
+.navigation-logo
+{
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.0px;
+    padding-right: 0px;
+    
+
+}
+nav .navigation-logo p
+{
+    float:left;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navigation-ul
+{
+    float: right;
+}
+nav .navigation-ul li
+{
+    display: inline-block;
+    list-style: none;
+    
+}
+   
+nav .navigation-ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size:  18px;
+    text-transform: uppercase;
+    padding: 50px 30px;
+    text-align: right;
+    
+}
+nav .navigation-ul li a:hover
+{
+    color: #ffffff;
+}
+
+nav ul li .active
+{
+    color: #3b3ebb;
+}
+
 body {
     background: linear-gradient(270deg, #3bbb9a, #3b3ebb, #3ba9bb);
     background-size: 600% 600%;
@@ -354,3 +433,53 @@ nav { display: none; }
 .social-list__link {
     padding: .5em;
 }
+
+/* Animation */
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.animation {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    
+}
+
+
+
+ 
+    
