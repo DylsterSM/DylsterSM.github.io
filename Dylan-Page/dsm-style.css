@@ -216,6 +216,10 @@ nav ul li .active
         height: 400px;
         object-fit: cover;
     }
+    #dylan-border-50 
+    {
+        border-radius: 50%;
+    }
     .dsm-base-font {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 300%;
