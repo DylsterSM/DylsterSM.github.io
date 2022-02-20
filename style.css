@@ -282,7 +282,98 @@ overflow-x:auto;
 }
 
 /*Brendon CSS*/
+.bwtextalign {
+    text-align: center;
+}
 
+.backgroundbox {
+    width:800px;
+    height:200px;
+    margin-left: 460px;
+    text-align: center;
+    border: 10px black;
+    padding: 40px;
+    padding-left: 60px;
+    background-color: whitesmoke;
+    box-shadow: 5px 10px 20px #383838;
+}
+
+.bwh1a {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+}
+
+.bwh1a span {
+    position: relative;
+    display: inline-block;
+    color: grey;
+    animation: bwh1a 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+#bwh1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+#bwimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+
+}
+
+#bwcolumn1 {
+    float:left; 
+    margin:0; 
+    width:33%; 
+    text-align: left;
+}
+
+#bwcolumn2 {
+    float:left; 
+    margin:0;width:33%; 
+    text-align: center;
+}
+
+#bwcolumn3 {
+    float:left; 
+    margin:0;width:33%; 
+    text-align: left;
+}
+
+#a1 {
+    --i:1
+}
+
+#a2 {
+    --i:2
+}
+
+#a3 {
+    --i:3
+}
+
+#a4 {
+    --i:4
+}
+
+#a5 {
+    --i:5
+}
+
+@keyframes bwh1a {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
 /* 1. Background box id for personal info with background color, shadows, etc.
 
    2. title ID with font type, size, and margins
