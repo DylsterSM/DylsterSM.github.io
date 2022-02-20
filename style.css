@@ -40,7 +40,7 @@ padding: 15px;
     font-size: 400%;
     font-weight: 800;
     font-style: oblique;
-    color:rgb(255, 255, 255);
+    color:#ccb9a9;;
     text-align: center;
 }
 
@@ -84,7 +84,7 @@ padding: 15px;
 }
 
 .names {
-    color: white;
+    color: #ccb9a9;;
 }
 .row::after {
 content: "";
@@ -99,7 +99,7 @@ height: auto;
 
 .same-size-img {
     float: left;
-    width:  350px;
+    width:  325px;
     height: 350px;
     object-fit: cover;
 
@@ -150,7 +150,7 @@ overflow-x:auto;
         
         width: 100%;
         height: auto;
-        background-color: #77240b;
+        background-color: #383838;
         line-height: 60px;
         padding: 0px 100px;
                
@@ -181,7 +181,7 @@ overflow-x:auto;
     nav .wc-nav-logo p
     {
         float:left;
-        color: #fff;
+        color: #ccb9a9;
         text-transform: uppercase;
     }
     
@@ -198,7 +198,7 @@ overflow-x:auto;
        
     nav .wc-nav-ul li a
     {
-        color: #fff;
+        color: #ccb9a9;
         text-decoration: none;
         font-size:  18px;
         text-transform: uppercase;
@@ -208,12 +208,12 @@ overflow-x:auto;
     }
     nav .wc-nav-ul li a:hover
     {
-        color:#dd8844;
+        color:#6e533d;
     }
 
     nav ul li .active
     {
-        color: #ffab66;
+        color: #6e533d;
     }
 
     .wc-bio-img 
@@ -317,7 +317,7 @@ html {
 	width: 350px;
 	height: 350px;
 	box-sizing: border-box;
-	border: 5px white solid;
+	border: 5px rgb(83, 76, 76) solid;
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
