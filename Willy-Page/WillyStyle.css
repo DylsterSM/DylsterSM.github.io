@@ -85,8 +85,8 @@ nav ul li .active
 {
     padding-top: 100px;
     max-width: 75%;
-    height: auto;  
-    width: auto;
+    height: 50%;  
+    width: 50%;
    padding-left: 15px;
    padding-right: 15px;
    padding-top: 100px;
@@ -94,6 +94,7 @@ nav ul li .active
    flex-shrink: 0;
    flex-basis: 50%;
    box-shadow: #77240b;
+   columns: 2;
 }
 .wc-bio-column
 {
@@ -106,15 +107,15 @@ nav ul li .active
    flex-shrink: 0;
    flex-basis: 50%;
    
+   
 }
 
 .bio-wc-row 
 {
- display:flex;
- flex-wrap: nowrap;
- margin-right: -15px;
- margin-left: -15px;
+ display:flex
+ 
 }
+
 
 .wc-bio-h1 
 {
@@ -139,17 +140,24 @@ nav ul li .active
 
 }
 .wc-skills-section {
-    
     background-size: cover;
     background-blend-mode: multiply;
     color: white;
     text-align: left;
-    background-image: url("BryceCanyon-clay.jpg");
-    background-color:(0,0,0,.5);
     height: 1000px;
-    font-size: 12px;
     position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, .5)), url("BryceCanyon-clay.jpg");
+        
+}
+
+
+
+
+.p-skills {
+    font-size: 16px;
     font-weight: 100;
+    text-align: center;
+    position: relative;
 }
 
 
