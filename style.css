@@ -281,6 +281,14 @@ overflow-x:auto;
     100%{background-position:0% 57%}
 }
 
+/*Brendon CSS*/
+
+/* 1. Background box id for personal info with background color, shadows, etc.
+
+   2. title ID with font type, size, and margins
+
+   3. box font class with font type, size, and margins
+
 /* Animation */
 html {
 	height: 100%;
