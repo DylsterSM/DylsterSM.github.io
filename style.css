@@ -307,7 +307,7 @@ overflow-x:auto;
 .bwh1a span {
     position: relative;
     display: inline-block;
-    color: grey;
+    color: white;
     animation: bwh1a 1s infinite;
     animation-delay: calc(.1s * var(--i));
 }
@@ -374,11 +374,6 @@ overflow-x:auto;
       transform: translateY(-20px)
     }
   }
-/* 1. Background box id for personal info with background color, shadows, etc.
-
-   2. title ID with font type, size, and margins
-
-   3. box font class with font type, size, and margins
 
 /* Animation */
 html {
