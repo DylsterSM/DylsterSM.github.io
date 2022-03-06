@@ -54,18 +54,18 @@ padding: 15px;
 }
 
 .style-styling {
-    width: 20px;
-    height: 20px;
+    width: 75px;
+    height: 75px;
     text-align: center;
     position: relative;
     margin: auto;
-    left: 1%;
+    left: 5%;
     bottom: 0%;
     border-radius: 50%;
     background-color: red;
     animation-name: move;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; 
 }
 
 @keyframes move {
@@ -145,7 +145,7 @@ overflow-x:auto;
         box-sizing: border-box;
         font-family: 'Playfair Display', serif;
  }
-    .wc-nav
+    .menu-bar
     {
         
         width: 100%;
@@ -161,44 +161,45 @@ overflow-x:auto;
     }
     @media (max-width: 400px)
     {
-        .wc-nav 
+        .navbar 
         {
            flex-direction: column;
           
         }
         
     }
-    .wc-nav-logo
+        
+    .navbar-brand
     {
-        font-size: 28px;
-        font-weight: bold;
-        font-style: italic;
-        letter-spacing: 1.0px;
-        padding-right: 0 px;
+        font-size: 28px !important;
+        font-weight: bold !important;
+        font-style: italic !important;
+        letter-spacing: 1.0px !important;
+        padding-right: 0px !important;
         
 
     }
-    nav .wc-nav-logo p
+    nav .navbar-brand 
     {
-        float:left;
-        color: #ccb9a9;
-        text-transform: uppercase;
+        float:left !important;
+        color: #ccb9a9 !important;
+        text-transform: uppercase !important;
     }
     
-    .wc-nav-ul
+    .navbar-nav
     {
         float: right;
     }
-    nav .wc-nav-ul li
+    nav .navbar-nav li
     {
         display: inline-block;
         list-style: none;
         
     }
        
-    nav .wc-nav-ul li a
+    .nav-link
     {
-        color: #ccb9a9;
+        color: #ccb9a9 !important;
         text-decoration: none;
         font-size:  18px;
         text-transform: uppercase;
@@ -206,9 +207,9 @@ overflow-x:auto;
         text-align: right;
         
     }
-    nav .wc-nav-ul li a:hover
+    nav .navbar-nav li a:hover
     {
-        color:#6e533d;
+        color:#6e533d!important;
     }
 
     nav ul li .active
@@ -218,10 +219,10 @@ overflow-x:auto;
 
     .wc-bio-img 
     {
-        padding-top: 100px;
-        max-width: 75%;
-        height: auto;
-        padding-left: 15px;
+       padding-top: 100px;
+       max-width: 75%;
+       height: auto;
+       padding-left: 15px;
        padding-right: 15px;
        padding-top: 100px;
        flex-grow: 0;

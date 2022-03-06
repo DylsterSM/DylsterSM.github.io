@@ -41,7 +41,7 @@
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
 }
-.navigation
+.menu-bar
 {
     width: 100%;
     height: auto;
@@ -56,7 +56,7 @@
 }
 @media (max-width: 400px)
 {
-    .navigation 
+    .navbar 
     {
        flex-direction: column;
        
@@ -64,53 +64,54 @@
     
 }
 
-.navigation-logo
+.navbar-brand
 {
-    font-size: 28px;
-    font-weight: bold;
-    font-style: italic;
-    letter-spacing: 1.0px;
-    padding-right: 0px;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    font-style: italic!important;
+    letter-spacing: 1.0px!important;
+    padding-right: 0px!important;
     
 
 }
-nav .navigation-logo p
+nav .navbar-brand
 {
-    float:left;
-    color: #fff;
-    text-transform: uppercase;
+    float:left!important;
+    color: #fff!important;
+    text-transform: uppercase!important;
 }
 
-.navigation-ul
+.navbar-nav
 {
     float: right;
 }
-nav .navigation-ul li
+nav .navbar-nav li
 {
     display: inline-block;
     list-style: none;
     
 }
    
-nav .navigation-ul li a
+.nav-link
 {
-    color: #fff;
+    color: #3b3ebb!important;
     text-decoration: none;
     font-size:  18px;
     text-transform: uppercase;
-    padding: 50px 30px;
+    padding: 40px 20px;
     text-align: right;
     
 }
-nav .navigation-ul li a:hover
+nav .navbar-nav li a:hover
 {
-    color: #ffffff;
+    color: #ffffff!important;
 }
 
 nav ul li .active
 {
     color: #3b3ebb;
 }
+
 
 body {
     background: linear-gradient(270deg, #3bbb9a, #3b3ebb, #3ba9bb);
@@ -231,6 +232,7 @@ nav { display: none; }
 
 .intro__img {
     box-shadow: var(--bs);
+    
 }
 
 .section__subtitle--intro {
