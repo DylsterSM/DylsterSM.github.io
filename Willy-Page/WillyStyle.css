@@ -1,16 +1,19 @@
 /*willy css*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
 
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif !important;
 }
 /* nav */
-.wc-nav-personal
+.menu-bar
 {
     width: 100%;
     height: auto;
@@ -24,44 +27,44 @@
 }
 @media (max-width: 400px)
 {
-    .wc-nav-personal 
+    .navbar
     {
        flex-direction: column;
        
     }
     
 }
-.wc-nav-logo-personal
+.navbar-brand
 {
-    font-size: 28px;
-    font-weight: bold;
-    font-style: italic;
-    letter-spacing: 1.0px;
-    padding-right: 0 px;
+    font-size: 28px !important;
+    font-weight: bold !important;
+    font-style: italic !important;
+    letter-spacing: 1.0px !important;
+    padding-right: 0 px !important;
     
 
 }
-nav .wc-nav-logo-personal p
+nav .navbar-brand
 {
-    float:left;
-    color: #fff;
-    text-transform: uppercase;
+    float:left !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
 }
 
-.wc-nav-ul-personal
+.navbar-nav
 {
     float: right;
 }
-nav .wc-nav-ul-personal li
+nav .navbar-nav li
 {
     display: inline-block;
     list-style: none;
     
 }
    
-nav .wc-nav-ul-personal li a
+.nav-link
 {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     font-size:  18px;
     text-transform: uppercase;
@@ -69,17 +72,11 @@ nav .wc-nav-ul-personal li a
     text-align: right;
     
 }
-nav .wc-nav-ul-personal li a:hover
+nav .navbar-nav li a:hover
 {
-    color:#dd8844;
+    color:#dd8844 !important;
 }
 
-img .container2:hover {
-
-
-width: 50%;
-height: 50%;
-}
 
 nav ul li .active2
 {
@@ -226,10 +223,11 @@ animation: Wc-Gradient-Anim 31s ease infinite;
 
 .footer
 {
-    position: fixed;
+    
     width: 100%;
     height: 100px;
-    background-color: #77240b;
+    background-color: #411406 !important;
+    
     left: 0px;
     bottom: 0px;
     text-align: center;
@@ -336,6 +334,8 @@ html {
     animation-name: slide;
     
 }
+
+
 
 
 
