@@ -1,7 +1,7 @@
 var playerCardArray = [[0,0,"",""], [0,0,"",""], [0,0,"",""]];
 var opponentCardArray = [[0,0,"",""], [0,0,"",""], [0,0,"",""]];
-var playerHealth = 20;
-var opponentHealth = 20;
+var playerHealth = 40;
+var opponentHealth = 40;
 
 
 //display elements:
@@ -20,8 +20,8 @@ function initGame() {
     defenseValues = document.getElementsByClassName('defense');
 
     for (let i = 0; i< attackValues.length; i++) {
-        var attackVal = parseInt(Math.random() * 4 + 1);
-        var healthVal = parseInt(Math.random() * 10 + 2);
+        var attackVal = parseInt(Math.random() * 4 + 2);
+        var healthVal = parseInt(Math.random() * 10 + 20);
         if (i < 3) {
             opponentCardArray[i][0] = attackVal;
             opponentCardArray[i][1] = healthVal;
@@ -59,12 +59,12 @@ function updateDisplay() {
        
         if (i < 3) {
             attackValues[i].innerHTML = "Attack: " + opponentCardArray[i][0];
-            defenseValues[i].innerHTML = "Defense: " + opponentCardArray[i][1];
+            defenseValues[i].innerHTML = "Health: " + opponentCardArray[i][1];
             titles[i].innerHTML = opponentCardArray[i][2];
         }
         else {
             attackValues[i].innerHTML = "Attack: " + playerCardArray[i-3][0];
-            defenseValues[i].innerHTML = "Defense: " + playerCardArray[i-3][1]; 
+            defenseValues[i].innerHTML = "Health: " + playerCardArray[i-3][1]; 
             console.log("player number title: " + playerCardArray[i-3][2]);
             titles[i].innerHTML = playerCardArray[i-3][2];
         }
@@ -73,22 +73,44 @@ function updateDisplay() {
 function cardDeathMatch() {
     //1. go through all player cards and all enemy cards
         for (let i = 0; i< playerCardArray.length; i++) {
-            playerCardArray[i][1] -= opponentCardArray[i][0];
-            opponentCardArray[i][1] -= playerCardArray[i][0];
+
+            //Willy: Added Two if statements that check if each cards health is >= 1 before calculating damage.
+            if(opponentCardArray[i][1] >= 1){
+                playerCardArray[i][1] -= opponentCardArray[i][0];
+            }
+            if(playerCardArray[i][1] >= 1){
+                opponentCardArray[i][1] -= playerCardArray[i][0]; 
+            }        
+            
+            
             if (opponentCardArray[i][1]<1) {
-                if (opponentCardArray[i][2] == "I'm dead") {
+                if (opponentCardArray[i][2] == "Dead") {
                     opponentHealth -= playerCardArray[i][0];
                     opponentCardArray[i][1] = 0;
                 }
-                opponentCardArray[i][2] = "I'm dead";
+                opponentCardArray[i][2] = "Dead";
             }
             if(playerCardArray[i][1] < 1) {
-                if (playerCardArray[i][2] == "I'm dead") {
+                if (playerCardArray[i][2] == "Dead") {
                     playerHealth -= opponentCardArray[i][0];
                     playerCardArray[i][1] = 0;
                 }
-                playerCardArray[i][2] = "I'm dead";
+                playerCardArray[i][2] = "Dead";
             }
+            
+
+            /*Willy's addition: If Player card array at index 1(health) is below 1 (dead) then set that cards attack to 0 so it's no longer calculating damage*/
+           /* if (playerCardArray[i][1] < 1){
+                playerCardArray[i][0] = 0;
+            } */
+/*Willy's addition: If oppoennt card array at index 1(health) is below 1 (dead) then set that cards attack to 0 so it's no longer calculating damage*/
+ 
+/* if (opponentCardArray[i][1] <1){
+                opponentCardArray[i][0] = 0;
+            } */
+            //commented out above code for the for loop iteration instead. Left this example in as another possible solution (less clean)
+            
+
             checkGameOver();
             updateDisplay();
         }
