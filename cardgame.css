@@ -1,7 +1,15 @@
 .health-display{
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 22rem;
+    background-color: white;
 }
 .card-img-top{
-    width: 12rem;
+    width: 18rem;
+    margin: 0 auto;;
+    margin-top: 1.5rem;
+}
+
+.body-background{
+    background-image: url("bambooforest.jpg");
 }
